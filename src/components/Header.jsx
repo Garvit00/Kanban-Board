@@ -1,6 +1,4 @@
 import React, {useState, useEffect, useRef} from 'react';
-import Display from '../icons/Display.svg';
-import down from '../icons/down.svg';
 
 const Header = ({ groupingOption, setGroupingOption, sortOption, setSortOption }) => {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -38,8 +36,8 @@ const Header = ({ groupingOption, setGroupingOption, sortOption, setSortOption }
       <div className="header-left">
         <div className="dropdown" ref={dropdownRef}>
           <button onClick={toggleDropdown} className="dropdown-button">
-            <img src={Display} alt='display'/><span style={{marginLeft: '5px'}}>Display</span>
-            <img src={down} alt='down'/>
+            <img src='../icons/Display.svg' alt='display'/><span style={{marginLeft: '5px'}}>Display</span>
+            <img src='../icons/down.svg' alt='down'/>
           </button>
           
           {isDropdownOpen && (
